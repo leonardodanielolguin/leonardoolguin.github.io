@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  background-color: #191c32;
+  color: white;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 2em;
+background-color: #191c32;
+}
+.brand {
+  margin-top: -7px;
+  color: white;
+}
+.brand span {
+  color: darkorange;
+}
+.menu {
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+}
+.menu  li {
+  list-style: none;
+
+}
+.menu a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px; 
+}
+
+.menu .active {
+  color: darkorange;
+ 
+}
+
+
+.menu li a:hover {
+  color: white;
+  background-color: darkorange;
+}
+
+
+.main {
+  margin: 0 auto;
+  width: 80vw;
+  height: 80vh;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  align-items: center;
+  gap: 2em;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+.info-content span {
+  color: darkorange;
+}
+
+.main img {
+  border:  7px solid darkorange;
+  width: 400px;
+  height: 500px;
+  z-index: 1em;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  width: 100vw;
+  align-items: center;
+}
+
+.about img {
+  width: 100%;
+  grid-column: 1/5;
+  height: 500px;
+}
+
+.about-info {
+  grid-column: 5/10;
+  padding: 3em;
+}
+
+.about-info h2 {
+  font-size: 2em;
+  color: black;
+}
+
+.divider {
+  height: 4px;
+  width: 60px;
+  background-color: darkorange;
+  margin-top: 5px;
+  margin-bottom: 2em;
+}
+
+.about p {
+  margin-bottom: 1em;
+  color: black;
+  font-weight: bold;
+}
+
+.portfolio,
+.contact-section {
+  width: 100vw;
+  background-color: #191c32;
+  color: white;
+}
+
+.portfolio-heading {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5em;
+}
+
+
+.portfolio-heading h2,
+.contact-heading h2 {
+  font-size: 2.5em;
+  color: white;
+}
+
+.portfolio .container {
+  width: 80vw;
+  height: 80vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 300px;
+  background-color: darkorange;
+  margin: 2em;
+
+}
+
+.card__img {
+  width: 100%;
+  height: 150px;
+  background-image: url(https://i.postimg.cc/MGRhbtRb/2-original.png);
+  background-size: cover;
+}
+
+.card__title {
+  padding: 20px;
+}
+
+.card__proyect-links {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+.card__proyect-links li {
+  font-size: 1em;
+  color: black;
+  font-weight: bold;
+}
+
+.contact-section {
+  padding: 3em;
+}
+
+.container-contact {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.contact-section img {
+  width: 750px;
+  height: 700px;
+  bottom: 0px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  margin-top: 2em;
+}
+.form-group textarea {
+  height: 150px;
+  padding: 1.5em;
+  background: none;
+  border: 1px solid white;
+  color: white;
+}
+
+.form-group .input {
+  padding: 10px 20px;
+  margin-bottom: 1em;
+  background: none;
+  border: none;
+  border-bottom: 1px solid white;
+  color: white;
+}
+
+.form-group .btn-submit {
+  padding: 10px 20px;
+  margin: 1em;
+  border-radius: 20px;
+  border: none;
+  text-transform: uppercase;
+  background-color: darkorange;
+}
+
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 200px;
+
+  padding: 3em;
+  background-color: darkorange;
+}
+
+.footer-content h2 {
+  font-size: 3em;
+}
+
+.footer-content h5 {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.sotial-networks {
+  display: flex;
+  justify-content: space-evenly;
+  width: 300px;
+  margin-top: 1em;
+}
+
+.sotial-networks i {
+  font-size: 1.5em;
+  color: black;
+}
